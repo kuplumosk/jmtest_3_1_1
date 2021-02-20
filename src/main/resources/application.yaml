@@ -1,0 +1,15 @@
+server:
+  port: 8189
+  servlet:
+    context-path: /
+spring:
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: false
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springsecurity?useSSL=false&serverTimezone=UTC
+    username: root
+    password: root
